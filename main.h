@@ -1,5 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
+#define BUFFER 1024
 #include <stdio.h>
 #include <stdarg.h>
 #include <unistd.h>
