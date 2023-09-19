@@ -4,6 +4,7 @@
  *  _print_sp - function check ifthe format is
  *  d or i or c or s or %
  * @format: format
+ * @args: args
  * Return: count
  */
 
