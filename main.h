@@ -3,6 +3,8 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <unistd.h>
+#define BUFFER 1024
+
 int _printf(const char *format, ...);
 int _putchar(char c);
 int _print_str(char *str);
