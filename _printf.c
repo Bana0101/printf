@@ -18,24 +18,7 @@ int _printf(const char *format, ...)
 		{
 			case '%':
 				format++;
-				switch (*format)
-				{
-				case 'c':
-					count += _putchar(va_arg(args, int));
-					break;
-				case 's':
-					count += _print_str(va_arg(args, char*));
-					break;
-				case '%':
-					count += _putchar('%');
-					break;
-				case 'd':
-					count += _print_num(va_arg(args, int));
-					break;
-				case 'i':
-					count += _print_num(va_arg(args, int));
-					break;
-				}
+				count += _print_sp(format, args);
 				break;
 			default:
 				count += _putchar(*format);
