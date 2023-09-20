@@ -8,15 +8,20 @@
 
 int _binary(int n)
 {
-	int binary[64], i = 0, j = 0;
+	int binary[32], count = 0, i = 0, j = 0;
 
+	if (n == 0)
+	{
+		_putchar('0');
+		count++;
+	}
 	while (n > 0)
 	{
-		binary[i] = n % 2;
+		binary[i++] = n % 2;
 		n /= 2;
-		i++;
+		count++;
 	}
 	for (j = 0; j < i; j++)
 		_print_num(binary[i - j - 1]);
-	return (i);
+	return (count);
 }
