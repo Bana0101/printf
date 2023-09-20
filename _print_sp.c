@@ -22,5 +22,7 @@ int _print_sp(const char *format, va_list args)
 		count += _print_num(va_arg(args, int));
 	else if (*format == 'i')
 		count += _print_num(va_arg(args, int));
+	else if (*format == 'b')
+		count += _binary(va_arg(args, int));
 	return (count);
 }
