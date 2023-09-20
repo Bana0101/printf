@@ -15,7 +15,12 @@ int _print_sp(const char *format, va_list args)
 	if (*format == 'c')
 		count += _putchar(va_arg(args, int));
 	else if (*format == 's')
-		count += _print_str(va_arg(args, char*));
+	{
+		if (!(va_arg(args, char*)))
+			count += _puts("(null)");
+		else
+			count += _print_str(va_arg(args, char*));
+	}
 	else if (*format == '%')
 		count += _putchar('%');
 	else if (*format == 'd')
@@ -24,5 +29,10 @@ int _print_sp(const char *format, va_list args)
 		count += _print_num(va_arg(args, int));
 	else if (*format == 'b')
 		count += _binary(va_arg(args, int));
+	else
+	{
+		count += _putchar('%');
+		count += _putchar(*format);
+	}
 	return (count);
 }
