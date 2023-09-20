@@ -16,7 +16,7 @@ int _print_sp(const char *format, va_list args)
 		count += _putchar(va_arg(args, int));
 	else if (*format == 's')
 	{
-			count += _print_str(va_arg(args, char*));
+		count += _print_str(va_arg(args, char*));
 	}
 	else if (*format == '%')
 		count += _putchar('%');
