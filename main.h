@@ -10,4 +10,5 @@ int _print_str(char *str);
 void _print_int(int n);
 int _print_num(int n);
 int _print_sp(const char *format, va_list args);
+int _binary(int n);
 #endif
