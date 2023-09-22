@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _print_int - pritn number
+ * _print_int_u - print number
  *@n: input parameter
  *Return: void
 */
@@ -22,7 +22,7 @@ void _print_int_u(unsigned int n)
 }
 
 /**
- * _print_num - print number
+ * _print_uns - print number
  * @n: input number
  * Return: lenght of n
  */
