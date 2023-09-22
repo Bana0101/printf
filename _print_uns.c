@@ -7,9 +7,9 @@
 
 void _print_int_u(unsigned int n)
 {
-	unsigned int m = n;
+	unsigned int m = n, z = 0;
 
-	if (m < 0)
+	if (m < z)
 	{
 		_putchar('-');
 		m = -1 * m;
