@@ -5,14 +5,14 @@
  *Return: void
 */
 
-void _print_int(int n)
+void _print_int(int long n)
 {
-	int m = n;
+	int long m = n;
 
 	if (m < 0)
 	{
 		_putchar('-');
-		m = -m;
+		m = -1 * m;
 	}
 	if (m / 10)
 	{
@@ -27,7 +27,7 @@ void _print_int(int n)
  * Return: lenght of n
  */
 
-int _print_num(int n)
+int _print_num(int long n)
 {
 	int len = 1, x = n;
 
